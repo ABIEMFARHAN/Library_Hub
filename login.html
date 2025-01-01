@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Library Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="Images/LIBRARY HUB.png" alt="Logo Aplikasi" class="logo">
+            <h1 class="header-title">LIBRARY HUB</h1>
+        </div>
+    </header>
+    <main>
+        <section id="login">
+            <h1>Masuk</h1>
+            <form id="form-login">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <table cellpadding="3px">
+            <tr>
+                <td><img src="Images/map icon.png" width="30px"></td>
+                <td>Library Hub<br>
+                    Jl. Pustaka Raya No. 12, Kebayoran Baru, Jakarta Selatan, DKI Jakarta, 12130
+                </td>
+            </tr>
+            <tr>
+                <td><img src="Images/phone icon.png" width="30px"></td>
+                <td>(021) 765-4321</td>
+            </tr>
+            <tr>
+                <td><img src="Images/gmail icon.png" width="30px"></td>
+                <td>info@LibraryHub.id</td>
+            </tr>
+            <tr>
+                <td><img src="Images/instagram icon.png" width="30px"></td>
+                <td>Library HUB</td>
+            </tr>
+        </table>
+        <p>&copy; 2024 Library Hub</p>
+    </footer> 
+    <script>
+        document.getElementById('form-login').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username && password) {
+                alert('Login berhasil! Klik OK untuk melanjutkan.');
+                window.location.href = 'buku.html';
+            } else {
+                alert('Semua field harus diisi!');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,348 @@
+/* Halaman Index */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ecf0f1;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e74c3c;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.header-title {
+    font-size: 24px;
+    color: #ecf0f1;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    padding: 1em;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section#intro {
+    text-align: center;
+}
+
+section#intro button {
+    padding: 0.5em 1em;
+    background-color: #e74c3c;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1em;
+    width: 150px;
+    height: 50px;
+}
+
+button {
+    padding: 0.5em 1em;
+    background-color: #e74c3c;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1em;
+    width: 100%;
+}
+
+section#intro button:hover, button:hover {
+    background-color: #c0392b;
+}
+
+footer { 
+    background-color: #2c3e50; 
+    color: #ecf0f1; 
+    padding: 1em; 
+    flex-shrink: 0;
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+/* Halaman login */
+section#login {
+    background-color: #f9f9f9;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: auto;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+section#login h1 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#form-login {
+    display: flex;
+    flex-direction: column;
+}
+
+#form-login label {
+    margin-bottom: 0.5em;
+}
+
+#form-login input {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* syarat dan ketentuan */
+section#syarat-ketentuan {
+    text-align: left;
+    background-color: #f9f9f9;
+    padding: 2em;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section#syarat-ketentuan h1 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 1em;
+}
+
+section#syarat-ketentuan ol {
+    margin-left: 1em;
+}
+
+section#syarat-ketentuan ol li {
+    margin-bottom: 1em;
+}
+
+section#syarat-ketentuan strong {
+    color: #2980b9;
+}
+
+/* Halaman buku */
+section#buku {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 2em 1em;
+    width: 100%;
+}
+
+section#buku h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+section#buku .buku {
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section#buku .buku:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+section#buku .buku img {
+    max-width: 150px;
+    border-radius: 10px 10px 0 0;
+}
+
+section#buku .buku h4 {
+    font-family: 'Verdana', sans-serif;
+    font-size: 1.2em;
+    color: #2980b9;
+    margin: 10px 0;
+}
+
+section#buku .buku p {
+    font-family: 'Arial', sans-serif;
+    font-size: 0.9em;
+    color: #7f8c8d;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Halaman transaksi */
+section#transaksi {
+    text-align: left;
+    background-color: #f9f9f9;
+    padding: 2em;
+    width: 100%;
+    max-width: 800px;
+    margin: 2em auto;
+}
+
+section#transaksi h2 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 1em;
+}
+
+section#transaksi form {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+section#transaksi h3 {
+    font-size: 1.5em;
+    color: #2980b9;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+section#transaksi form label {
+    font-size: 1em;
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+section#transaksi form input {
+    font-size: 1em;
+    color: #2c3e50;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: calc(100% - 1em);
+    margin-bottom: 1em;
+}
+
+/* Halaman profil */
+section#profil {
+    text-align: left;
+    background-color: #f9f9f9;
+    padding: 2em;
+    width: 100%;
+    max-width: 800px;
+    margin: 2em auto;
+}
+
+section#profil h1, section#profil h2 {
+    font-family: 'Arial', sans-serif;
+    color: #2c3e50;
+}
+
+section#profil h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+section#profil h2 {
+    font-size: 2em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+section#profil ul, ol {
+    list-style-type: disc;
+    margin-left: 2em;
+    margin-bottom: 1em;
+}
+
+section#profil ul li, ol li {
+    margin-bottom: 0.5em;
+}
+
+section#profil blockquote {
+    background-color: #fff;
+    border-left: 5px solid #2980b9;
+    margin: 1.5em 0;
+    padding: 0.5em 1em;
+    quotes: "“" "”" "‘" "’";
+}
+
+section#profil blockquote p {
+    font-style: italic;
+    color: #555;
+    margin: 0;
+}
+
+/* Halaman daftar transaksi */
+section#daftar-transaksi {
+    width: 100%;
+    max-width: 1350px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 3em;
+    margin: 2em auto;
+}
+
+thead {
+    background-color: #2c3e50;
+    color: white;
+}

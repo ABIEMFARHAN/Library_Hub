@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi - Library Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="Images/LIBRARY HUB.png" alt="Logo Aplikasi" class="logo">
+            <h1 class="header-title">LIBRARY HUB</h1>
+        </div>
+        <nav> 
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="buku.html">Buku</a></li>
+                <li><a href="transaksi.html">Transaksi</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="login.html">Masuk</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="syarat-ketentuan">
+            <h1>Syarat & Ketentuan Peminjaman Buku</h1>
+            <ol>
+                <li><strong>Keanggotaan Perpustakaan</strong><br>Peminjaman buku hanya dapat dilakukan oleh anggota terdaftar di perpustakaan. Pastikan Anda sudah terdaftar sebagai anggota dengan nomor ID anggota yang valid.</li>
+                <li><strong>Durasi Peminjaman</strong><br>Setiap buku yang dipinjam memiliki durasi peminjaman selama <strong>1 minggu</strong> terhitung sejak tanggal peminjaman. Buku yang sudah melewati batas waktu pengembalian akan dikenakan denda.</li>
+                <li><strong>Denda Keterlambatan</strong><br>Keterlambatan pengembalian buku akan dikenakan denda sesuai dengan peraturan yang berlaku di perpustakaan. Denda akan dihitung per hari keterlambatan.</li>
+                <li><strong>Jumlah Buku yang Dipinjam</strong><br>Setiap anggota hanya diperbolehkan meminjam maksimal <strong>3 buku</strong> sekaligus dalam satu waktu peminjaman.</li>
+                <li><strong>Kondisi Buku</strong><br>Buku yang dipinjam harus dikembalikan dalam kondisi baik. Apabila buku rusak atau hilang, peminjam diwajibkan untuk mengganti buku dengan buku yang sama atau membayar biaya pengganti sesuai harga buku.</li>
+                <li><strong>Pengembalian Buku</strong><br>Pengembalian buku harus dilakukan pada waktu yang telah ditentukan, yaitu dalam <strong>1 minggu</strong> setelah peminjaman. Jika tidak dapat mengembalikan buku tepat waktu, segera hubungi petugas perpustakaan untuk perpanjangan.</li>
+                <li><strong>Perpanjangan Peminjaman</strong><br>Peminjaman dapat diperpanjang jika tidak ada peminat lain yang menunggu buku tersebut, dan hanya bisa dilakukan satu kali selama durasi perpanjangan maksimal <strong>1 minggu</strong>.</li>
+                <li><strong>Kebijakan Umum</strong><br>Perpustakaan berhak untuk menangguhkan hak peminjaman bagi anggota yang sering terlambat mengembalikan buku atau melanggar ketentuan yang ada.</li>
+            </ol>
+        </section>
+        <section id="transaksi">
+            <h2>Formulir Peminjaman Buku</h2>
+            <form id="form-transaksi">
+                <h3>1. Data Peminjam:</h3>
+                <label for="nama">Nama Peminjam:</label>
+                <input type="text" id="nama" name="nama" required>
+                
+                <label for="id-member">ID Member:</label>
+                <input type="text" id="id-member" name="id-member" required>
+                
+                <label for="email">Alamat Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="nomor-telepon">Nomor Telepon:</label>
+                <input type="tel" id="nomor-telepon" name="nomor-telepon" required>
+                
+                <label for="tanggal-peminjaman">Tanggal Peminjaman:</label>
+                <input type="date" id="tanggal-peminjaman" name="tanggal-peminjaman" required>
+                
+                <h3>2. Data Buku:</h3>
+                <label for="judul-buku">Judul Buku:</label>
+                <input type="text" id="judul-buku" name="judul-buku" required>
+                
+                <label for="pengarang">Pengarang / Penulis:</label>
+                <input type="text" id="pengarang" name="pengarang" required>
+                
+                <label for="kategori">Kategori / Jenis Buku:</label>
+                <input type="text" id="kategori" name="kategori" required>
+                
+                <label for="tanggal-peminjaman-buku">Tanggal Peminjaman:</label>
+                <input type="date" id="tanggal-peminjaman-buku" name="tanggal-peminjaman-buku" required>
+                
+                <h3>3. Informasi Pengembalian (jika sudah dikembalikan):</h3>
+                <label for="tanggal-pengembalian">Tanggal Pengembalian:</label>
+                <input type="date" id="tanggal-pengembalian" name="tanggal-pengembalian">
+                
+                <label for="kondisi-buku">Kondisi Buku:</label>
+                <input type="text" id="kondisi-buku" name="kondisi-buku">
+                
+                <label for="denda">Denda (jika ada):</label>
+                <input type="number" id="denda" name="denda">
+                
+                <button type="submit">Pinjam</button>
+                <button onclick="location.href='daftar-transaksi.html'">Daftar Transaksi</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <table cellpadding="3px">
+            <tr>
+                <td><img src="Images/map icon.png" width="30px"></td>
+                <td>Library Hub<br>
+                    Jl. Pustaka Raya No. 12, Kebayoran Baru, Jakarta Selatan, DKI Jakarta, 12130
+                </td>
+            </tr>
+            <tr>
+                <td><img src="Images/phone icon.png" width="30px"></td>
+                <td>(021) 765-4321</td>
+            </tr>
+            <tr>
+                <td><img src="Images/gmail icon.png" width="30px"></td>
+                <td>info@LibraryHub.id</td>
+            </tr>
+            <tr>
+                <td><img src="Images/instagram icon.png" width="30px"></td>
+                <td>Library HUB</td>
+            </tr>
+        </table>
+        <p>&copy; 2024 Library Hub</p>
+    </footer> 
+    <script>
+        document.getElementById('form-transaksi').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const nama = document.getElementById('nama').value;
+            const idMember = document.getElementById('id-member').value;
+            const email = document.getElementById('email').value;
+            const nomorTelepon = document.getElementById('nomor-telepon').value;
+            const tanggalPeminjaman = document.getElementById('tanggal-peminjaman').value;
+            const judulBuku = document.getElementById('judul-buku').value;
+            const pengarang = document.getElementById('pengarang').value;
+            const kategori = document.getElementById('kategori').value;
+            const tanggalPeminjamanBuku = document.getElementById('tanggal-peminjaman-buku').value;
+
+            if (nama && idMember && email && nomorTelepon && tanggalPeminjaman && judulBuku && pengarang && kategori && tanggalPeminjamanBuku) {
+                alert('Peminjaman berhasil! Data peminjaman telah disimpan.');
+                window.location.href = 'daftar-transaksi.html';
+            } else {
+                alert('Semua field harus diisi!');
+            }
+        });
+    </script>
+</body>
+</html>
