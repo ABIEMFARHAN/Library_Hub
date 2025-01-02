@@ -25,17 +25,6 @@ header {
     align-items: center;
 }
 
-nav ul li a {
-    color: #ecf0f1;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #e74c3c;
-}
-
 .logo {
     height: 50px;
     margin-right: 10px;
@@ -61,6 +50,46 @@ nav ul li a {
     color: #ecf0f1;
     text-decoration: none;
     font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e74c3c;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto; /* Ubah tinggi agar otomatis */
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%; /* Pastikan nav mengambil lebar penuh */
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px; /* Tambahkan margin bawah untuk item */
+    }
+
+    .logo {
+        height: auto; /* Atur tinggi otomatis */
+        width: 100%;
+        max-width: 150px; /* Batasan max-width */
+        margin-bottom: 10px; /* Margin bawah untuk logo */
+    }
+
+    .header-title {
+        font-size: 20px; /* Atur ulang ukuran font */
+    }
 }
 
 main {
