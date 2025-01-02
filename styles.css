@@ -334,6 +334,7 @@ section#daftar-transaksi {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 2em;
     margin: 2em auto;
+    overflow-x: auto;
 }
 
 section#daftar-transaksi table {
